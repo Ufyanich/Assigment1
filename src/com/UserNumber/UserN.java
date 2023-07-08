@@ -1,3 +1,5 @@
+package com.UserNumber;
+
 import java.util.Scanner;
 
 public class UserN {
