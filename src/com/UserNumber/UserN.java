@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 
 public class UserN {
-    public static int getMinN(int n, int[] numList) {
+    public static int getMinN(int n, Integer[] numListMin) {
 
-        int min = numList[0];
+        int min = numListMin[0];
 
         for (int i = 1; i < n; i++) {
-            if (numList[i] < min) {
-                min = numList[i];
+            if (numListMin[i] < min) {
+                min = numListMin[i];
             }
         }
 
@@ -28,12 +28,12 @@ public class UserN {
         Integer[] numList = new Integer[n];
 
         for (int i = 0; i < n; i++){
-            System.out.println("Write an Array element" + i);
+            int j = i + 1;
+            System.out.println("Write an Array element " + j);
             numList[i] = scan.nextInt();
         }
 
-        for (int j = 0; j < n; j++){
-            System.out.println("Check " + numList[j]);
-        }
+        int minVal = getMinN(n, numList);
+        System.out.println("Minimum value " + minVal);
     }
 }
