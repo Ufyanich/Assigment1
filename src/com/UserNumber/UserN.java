@@ -34,6 +34,6 @@ public class UserN {
         }
 
         int minVal = getMinN(n, numList);
-        System.out.println("Minimum value " + minVal);
+        System.out.println("Minimum value " + minVal); //1st Problem
     }
 }
