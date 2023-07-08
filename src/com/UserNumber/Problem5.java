@@ -7,6 +7,7 @@ public class Problem5 {
 
         if (n <= 0){
             System.out.println("Error");
+            return 0;
         }
 
         if (n == 1 || n == 2){
@@ -23,6 +24,6 @@ public class Problem5 {
 
 
         int j = sumFib(n);
-        System.out.println(n + " Fib = " + j);
+        System.out.println(n + "th Fibonacci Number  = " + j);
     }
 }
