@@ -23,14 +23,14 @@ public class Problem9 {
 
     public static int sumMinus(int n, int k){
 
-        int i = n-k;
+        int i = n - k;
 
-        if (i <= 0)
+        for (int j = i - 1; j > 0; j--)
         {
-            return 1;
+            i = i * j;
         }
 
-        return i * sumMinus(n-1, k-1);
+        return i;
     }
 
     public static void main(String[] args) {
@@ -42,6 +42,9 @@ public class Problem9 {
         System.out.println("Write k");
         k = scan.nextInt();
 
+        int j = sumN(n)/(sumK(k) * sumMinus(n, k));
+
+        System.out.println("binomial coefficient = " + j);
 
     }
 }
