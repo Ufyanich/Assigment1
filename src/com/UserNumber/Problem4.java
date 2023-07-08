@@ -6,9 +6,10 @@ public class Problem4 {
     public static int sum(int n){
         if (n > 0)
         {
-            return n * sum(n--);
+            return n * sum(n-1);
         }
-        else return 1;
+        else {
+            return 1;}
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -17,7 +18,7 @@ public class Problem4 {
         int n = scan.nextInt();
 
 
-        String varVal = getString(n);
-        System.out.println("number is " + varVal);
+        int j = sum(n);
+        System.out.println(n + "! = " + j);
     }
 }
