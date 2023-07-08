@@ -9,4 +9,13 @@ public class Problem9 {
         else {
             return 1;}
     }
+
+    public static int sumK(int k){
+        if (k > 0)
+        {
+            return k * sumN(k-1);
+        }
+        else {
+            return 1;}
+    }
 }
